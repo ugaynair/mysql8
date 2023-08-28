@@ -7,7 +7,7 @@ const config = {
   url: '',
   host: '172.16.7.101',
   port: 3306,
-  user: 'nbsusr',
+  user: 'obsusr',
   password: 'P@ssw0rd1',
   database: 'blb'
 };

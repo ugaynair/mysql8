@@ -18,7 +18,9 @@ export class Mysql8ModelRepository extends DefaultCrudRepository<
     console.log('Begin repository function call');
     // MySQL Connection
     const sqlQuery = `
-    select BBCLID, BBCLRUNID, BBCL_CIF_KEY, FBE_ACCOUNT_ID from BBCL_FBE_ACC limit 1;
+    select CCARDNO, STATDATE
+    from BBL_CCARD3HDR_DAILY
+    where ccardno = ${ccardno};
     `;
     
     console.log('Inside MYSQL Test Repository before datasource execution');
